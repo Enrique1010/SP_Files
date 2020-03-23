@@ -31,7 +31,6 @@ rpm -Uiv http://mirror.centos.org/centos/7/os/x86_64/Packages/libICE-1.0.9-9.el7
 rpm -Uiv http://mirror.centos.org/centos/7/os/x86_64/Packages/libSM-1.2.2-2.el7.x86_64.rpm
 
 # Instalacion de dependencias de python
-pip3.4 install
 pip3.4 install virtualenv flask uwsgi
 
 # Descarga del codigo del servicio
