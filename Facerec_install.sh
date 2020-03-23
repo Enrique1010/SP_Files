@@ -18,21 +18,21 @@ rpm -Uiv http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/n/nginx-1.12.2-2
 
 yum install nginx-all-modules
 
-yum -y install python37 python37-devel python37-pip mod_proxy_uwsgi gcc
+yum -y install python34 python34-devel python34-pip mod_proxy_uwsgi gcc
 
 rpm -Uiv http://mirror.centos.org/centos/7/os/x86_64/Packages/tcl-8.5.13-8.el7.x86_64.rpm
 
 rpm -Uiv http://mirror.centos.org/centos/7/os/x86_64/Packages/tk-8.5.13-6.el7.x86_64.rpm
 
-yum -y install python37-tkinter
+yum -y install python34-tkinter
 
 rpm -Uiv http://mirror.centos.org/centos/7/os/x86_64/Packages/libICE-1.0.9-9.el7.x86_64.rpm
 
 rpm -Uiv http://mirror.centos.org/centos/7/os/x86_64/Packages/libSM-1.2.2-2.el7.x86_64.rpm
 
 # Instalacion de dependencias de python
-pip3.7 install --upgrade pip
-pip3.7 install virtualenv flask uwsgi
+pip3.4 install
+pip3.4 install virtualenv flask uwsgi
 
 # Descarga del codigo del servicio
 cd /opt
